@@ -96,10 +96,10 @@ keepalive {{ openvpn_keepalive }}
 
 # Enable compression on the VPN link. If you enable it here, you must also
 # enable it in the client config file.
-{% if openvpn_comp_lzo -%}
-comp-lzo
+{% if openvpn_compress -%}
+compress {{ openvpn_compress }}
 {% else -%}
-;comp-lzo
+;compress lz4
 {% endif %}
 
 # The persist options will try to avoid accessing certain resources on restart

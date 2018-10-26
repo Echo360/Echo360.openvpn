@@ -36,7 +36,7 @@ openvpn_max_clients: 100
 openvpn_log: /var/log/openvpn.log                   # Log's directory
 openvpn_keepalive: "10 120"
 openvpn_ifconfig_pool_persist: ipp.txt
-openvpn_comp_lzo: yes                               # Enable compression
+openvpn_compress: lz4                               # Enable compression
 openvpn_cipher: BF-CBC                              # Encryption algorithm
 openvpn_status: openvpn-status.log
 openvpn_verb: 3
